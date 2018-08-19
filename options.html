@@ -1,0 +1,57 @@
+<!-- https://developer.chrome.com/extensions/options -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>YNAB URL Tracker Options</title>
+<script src="jquery.min.js"></script>
+<!-- For speed of dev Skeleton was included to help with potential layour and
+formatting, but it's not really used and poorly overwritten in main stylesheet. -->
+<link rel="stylesheet" href="skeleton.css">
+<link rel="stylesheet" href="option_styles.css">
+
+
+</head>
+<body>
+  <body style="width:100%;">
+    <div id="titleBar">
+    <h1 id="titleHeader" style="text-align:center">
+      YNAB Website Tracker
+    </h1>
+  </div>
+
+    <div id="authorize" style="width: 100%; text-align:center;">
+    </br>
+      <p> Please authorize API access to your YNAB account using the link below.</p>
+      <a href="https://app.youneedabudget.com/oauth/authorize?client_id=61640ecd06db3c2a208c94cf732a4ca2c3a9ce0b2260c5556197019f95aa5f75&redirect_uri=https://ynab-website-tracker.herokuapp.com/ynab_redirect&response_type=code">Authorize</a>
+    </div>
+
+    <div id="helpText">
+      <div style="padding-top: 20px;">
+      <h2 id="title">Budget Select</h2>
+    </div>
+      <span id="selectBudgetText">Select your budget to load your categories and begin setting keywords.</span>
+    </div>
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+    <div class="row">
+    <div id="tableDiv" style="width: 100%;">
+    <table style="margin:auto;" id="budgetsTable">
+    </table>
+  </div>
+    </br>
+    <table id="categoriesTable">
+      <tbody>
+      </tbody>
+    </table>
+    <div style="width:100%;margin-left: 20%;">
+      <div id="status"></div>
+      <button id="save">Save</button>
+    </div>
+    <div id="helper_text">
+      You can access these options any time from chrome://extensions, selecting the YNAB Website Tracker app, and viewing the "Extension options" or by right clicking the chrome extension icon in and selecting "options".
+    </div>
+  </div>
+  </body>
+<script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: Helvetica;
+}
+
+body {
+  margin-top: 10px;
+  margin-left: 0px!important;
+}
+
+h2 {
+  text-align:left;
+  color: #223646;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom:5px;
+}
+
+td {
+  color: #585858;
+  padding-top: 5px!important;
+  padding-bottom: 5px!important;
+}
+
+input {
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+#titleBar {
+  padding-top: 3px;
+  padding-bottom: 10px;
+  margin-bottom: 0px!important;
+  box-shadow:0px 1px 2px rgba(0,0,0,0.1);
+
+}
+#titleHeader {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #12323D;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+/* Contains the first header row items */
+#header_row {
+  font-weight: bold;
+}
+/* Header for individual categories */
+.category_header_row td {
+  padding-top: 20px;
+  font-weight: bold;
+}
+/* Table row that holds the budget categories */
+.category_row {
+}
+.keyword_input {
+  margin-right: 10px;
+}
+
+#helper_text {
+  font-size: 0.9em;
+  color: grey;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+.budgetRow:hover {
+  cursor: pointer;
+}
+
+#helpText {
+  /* text-align: center; */
+  padding: 10px;
+  margin-right: 20%;
+  margin-left:20%;
+  margin-bottom:10px;
+}
+
+a {
+  color :#F27640;
+  font-weight: bold;
+}
+
+button {
+  border: 2px solid #F27640!important;
+  cursor: pointer;
+  color: #F27640;
+}
+
+button:hover {
+  color: #e26021;
+}
+
+.tableCellButton {
+  border: 2px solid #F27640!important;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #F27640;
+  margin-bottom: 3px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+.tableCellButton:hover {
+  color: #e26021;
+}
+
+#selectBudgetText {
+  color: #646464
+}
+
+#categoriesTable {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+/* Loading Icon */
+.lds-roller {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #85C3E9;
+  margin: -3px 0 0 -3px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name" : "YNAB Website Tracker",
+  "version" : "0.1",
+  "description" : "Identifies the category of website and shows whether you still have money left in your budget for that category.",
+  "web_accessible_resources": ["options.html"],
+  "permissions" : [
+    "storage",
+    "identity",
+    "identity.email",
+    "activeTab",
+    "tabs"
+    ],
+    "browser_action" : {
+      "default_icon" : "assets/images/icon128_default.png"
+    },
+  "content_scripts" : [
+    {
+        "matches" : ["https://*/*"],
+        "exclude_globs" : [],
+        "js" : ["jquery.min.js","script.js"]
+    }
+  ],
+  "background" : {
+    "matches" : ["https://*/*"],
+    "exclude_globs" : [],
+    "scripts" : ["jquery.min.js", "background.js"]
+  },
+  "options_ui" : {
+      "page" : "options.html",
+      "open_in_tab" : false
+  },
+  "manifest_version" : 2
+}
