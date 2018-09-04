@@ -7,7 +7,7 @@ function getUserToken() {
   // Clear storage for testing
   //TODO : this is still being manually set.
   chrome.storage.sync.set({
-    ynabUserId : "21a24394-0380-427a-b1b6-5ff7a7f84203"
+    ynabUserId : "" // User ID was manually set and removed for public
   });
 
   chrome.identity.getProfileUserInfo(function(info) {
